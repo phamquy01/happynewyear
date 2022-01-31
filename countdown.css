@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  height: 595px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgb(255, 139, 139);
+  font-family: "Poppins", sans-serif;
+  /* background: url(./vHoEAff.jpeg) center / cover no-repeat; */
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3 {
+  padding: 8px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #fff;
+  box-shadow: 1px 1px 20px #333;
+}
+h1 {
+  font-size: 70px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 12px #333;
+}
+.date-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.date-time .days,
+.hours,
+.minutes,
+.seconds {
+  position: relative;
+  width: 100%;
+  margin: 60px 20px;
+}
+.date-time p {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  width: 200px;
+  padding: 50px 0;
+  border-radius: 5px;
+  height: 150px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px #333;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.date-time p::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+.date-time .day,
+.hr,
+.mn,
+.sc {
+  width: 140px;
+  padding: 15px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 125px;
+  left: 30px;
+  box-shadow: 1px 1px 20px #333;
+}
+.firework-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bongbong {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  display: none;
+  background-color: #333;
+}
